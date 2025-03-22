@@ -1,0 +1,116 @@
+:root {
+  --sx-color-primary-container: #3b86ff;
+  --sx-color-on-primary-container: #ffffff !important;
+  --sx-color-primary: var(--play-btn-triangle) !important;
+}
+
+:global(.sx__week-grid__date-axis) {
+  gap: 16px;
+}
+
+:global(.sx__week-grid__date) {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+}
+
+:global(.sx__week-grid__date-axis) {
+  height: 55px;
+  width: 100%;
+  background-color: #f5f6fa;
+  border: 1px solid #eaf0f4;
+}
+
+:global(.sx__week-grid__day-name) {
+  color: #a3a6b4;
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+:global(.sx__week-grid__date-number) {
+  color: #a3a6b4;
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+:global(.sx__week-grid__hour-text) {
+  color: #a3a6b4;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+:global(.sx__week-grid__date--is-today .sx__week-grid__date-number) {
+  width: 20px;
+  background-color: #3b86ff;
+  color: #ffffff;
+}
+:global(.sx__week-grid__date--is-today .sx__week-grid__day-name) {
+  color: #3b86ff;
+}
+
+:global(.sx__time-grid-event) {
+  cursor: pointer;
+}
+
+:global(.sx__time-grid-event-title) {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+:global(.sx__time-grid-event-time) {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+:global(.sx__view-container) {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+:global(.sx__week-wrapper) {
+  padding-right: 20px;
+}
+
+:global(.sx__view-container)::-webkit-scrollbar,
+:global(.sx__date-picker-popup)::-webkit-scrollbar {
+  width: 8px;
+}
+
+:global(.sx__view-container)::-webkit-scrollbar-thumb,
+:global(.sx__date-picker-popup)::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border-radius: 4px;
+}
+
+:global(.sx__view-container)::-webkit-scrollbar-track,
+:global(.sx__date-picker-popup)::-webkit-scrollbar-track {
+  background-color: #a3a6b4;
+  border-radius: 4px;
+}
+
+.calendar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #f7f7f7;
+}
